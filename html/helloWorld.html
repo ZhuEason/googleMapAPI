@@ -2,11 +2,18 @@
 <html>
 <head>
     <script src="http://maps.googleapis.com/maps/api/js"></script>
+    <script type="text/javascript"
+            src="https://maps.googleapis.com/maps/api/js?libraries=visualization"></script>
     <script type="text/javascript" src="../JS/helloWorld.js"></script>
     <link rel="stylesheet" type="text/css" href="../css/helloWorld.css">
 </head>
 
 <body>
+<div id="floating-panel-removePath">
+    <input onclick="removeLine();" type=button value="Remove line">
+    <input onclick="addLine();" type=button value="Restore line">
+</div>
+
 <div id="floating-panel">
     <input onclick="clearMarkers();" type=button value="Hide Markers">
     <input onclick="showMarkers();" type=button value="Show All Markers">
